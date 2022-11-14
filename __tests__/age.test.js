@@ -36,6 +36,7 @@ describe('Age', () => {
   });
 
   test('should calculate average expectancy on Mercury and store in expectancy array', () =>{
+    age.planetAvgs();
     expect(age.planetExpectancies).toEqual([333.33])
   });
 
