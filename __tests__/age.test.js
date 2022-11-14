@@ -35,9 +35,9 @@ describe('Age', () => {
     expect(age.difference()).toEqual(`You have about 50 Earth years, 208.33 Mercury years, 80.64 Venus years, 26.59 Mars years, or 4.22 Jupiter years remaining.`)
   });
 
-  test('should return positive numbers for users who are older than the average age, Earth & Mercury', () => {
+  test('should return positive numbers for users who are older than the average age, Earth, Mercury, Venus', () => {
     age.earthAge = 90;
-    expect(age.difference()).toEqual(`You have surpassed the average life expectancy by: 10 Earth years, 41.67 Mercury years .`)
+    expect(age.difference()).toEqual(`You have surpassed the average life expectancy by: 10 Earth years, 41.67 Mercury years, 16.13 Venus years.`)
   });
 
 
