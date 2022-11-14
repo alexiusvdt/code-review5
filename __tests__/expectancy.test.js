@@ -4,13 +4,13 @@ describe('Expectancy', () => {
   let expectancy;
 
   beforeEach(() => {
-    expectancy = new Expectancy(false, 150, 1, 8, false, "high");
+    expectancy = new Expectancy(false, 150, 0, 8, false, "high");
   });
 
   test('should create an Expectancy object', () => {
     expect(expectancy.smoker).toEqual(false);
     expect(expectancy.weight).toEqual(150);
-    expect(expectancy.married).toEqual(1);
+    expect(expectancy.married).toEqual(0);
     expect(expectancy.drinks).toEqual(8);
     expect(expectancy.majorCondition).toEqual(false);
     expect(expectancy.exercise).toEqual("high");
@@ -32,6 +32,6 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(80);
     expectancy.married = 1
     expect(expectancy.getLifeExpectancy()).toEqual(82);
-  })
+  });
 
 });
