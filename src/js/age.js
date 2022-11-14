@@ -12,6 +12,11 @@ export default class Age {
     return Number((this.earth / 0.62).toFixed(2));
   }
 
+  marsAge() {
+    return Number((this.earth / 1.88).toFixed(2));
+  }
+
+
 }
 
 //   methodTemplate() {
