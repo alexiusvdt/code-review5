@@ -40,6 +40,10 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(70);
   })
 
-
+  test('users with high drinks per week have a moderate penalty applied', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
+    expectancy.drinks = 7;
+    expect(expectancy.getLifeExpectancy()).toEqual(75);
+  });
 
 });
