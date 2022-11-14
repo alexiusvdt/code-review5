@@ -31,8 +31,8 @@ describe('Age', () => {
     expect(age.jupiterAge(30)).toEqual(2.53);
   });
 
-  test('should return average remaining years on Earth, Mercury, Venus, and Mars in a string', () => {
-    expect(age.difference()).toEqual(`You have about 50 Earth years, 208.33 Mercury years, 80.64 Venus years, or 26.59 Mars years remaining.`)
+  test('should return average remaining years on Earth, Mercury, Venus, Mars, and Jupiter in a string', () => {
+    expect(age.difference()).toEqual(`You have about 50 Earth years, 208.33 Mercury years, 80.64 Venus years, 26.59 Mars years, or 4.22 Jupiter years remaining.`)
   });
 
   // test('should calculate average expectancy on multiple planets and store in expectancy array', () =>{
