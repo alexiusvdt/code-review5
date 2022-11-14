@@ -16,6 +16,9 @@ export default class Age {
     return Number((this.earth / 1.88).toFixed(2));
   }
 
+  jupiterAge() {
+    return Number((this.earth / 11.86).toFixed(2));
+  }
 
 }
 
