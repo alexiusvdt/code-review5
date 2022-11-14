@@ -7,4 +7,12 @@ export default class Expectancy {
     this.majorCondition = majorCondition;
     this.exercise = exercise; 
   }
+
+  getLifeExpectancy() {
+    let life = 80;
+    if (this.smoker === true) {
+      life += -5
+    }
+    return life
+  }
 }
