@@ -31,12 +31,14 @@ describe('Age', () => {
     expect(age.jupiterAge()).toEqual(2.53);
   });
 
-  test('should return average remaining years on earth', () => {
-    expect(age.difference()).toEqual(50.00)
+  test('should return average remaining years on earth in a string', () => {
+    expect(age.difference()).toEqual(`You have about 50 earth years remaining`)
   })
 
-  // test('should return the difference of avg expectancy and current age on earth', () => {
-  //   expect(age.difference().toEqual(50));
+  // future tests
+  // test('should return average remaining years on Mercury', () => {
+  //   expect(age.difference().toEqual(333.33))
   // })
+
 
 });

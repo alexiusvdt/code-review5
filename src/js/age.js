@@ -23,7 +23,8 @@ export default class Age {
   }
 
   difference() {
-    return Number((this.userAverage - this.earthAge).toFixed(2));
+    let difference = Number((this.userAverage - this.earthAge).toFixed(2));
+    return `You have about ${difference} earth years remaining`;
   }
 
 }
