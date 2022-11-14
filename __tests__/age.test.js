@@ -39,11 +39,4 @@ describe('Age', () => {
     age.earthAge = 90;
     expect(age.difference()).toEqual(`You have surpassed the average life expectancy by: 10 Earth years, 41.67 Mercury years, 16.13 Venus years, 5.32 Mars years, or 0.84 Jupiter years.`)
   });
-
-
-  // test('should calculate average expectancy on multiple planets and store in expectancy array', () =>{
-  //   age.planetAvgs();
-  //   expect(age.planetExpectancies).toEqual([333.33, 129.03, 42.55, 6.75])
-  // });
-
 });
