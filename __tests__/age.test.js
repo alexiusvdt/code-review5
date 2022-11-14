@@ -40,6 +40,12 @@ describe('Age', () => {
     expect(age.planetExpectancies).toEqual([333.33])
   });
 
+  test('should calculate average expectancy on Mercury and Venus & store in expectancy array', () => {
+    age.planetAvgs();
+    expect(age.planetExpectancies).toEqual([333.33, 129.03])
+  })
+
+
   // future tests
   // test('should return average remaining years on Mercury', () => {
   //   expect(age.difference().toEqual(333.33))
