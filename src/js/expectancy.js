@@ -12,6 +12,8 @@ export default class Expectancy {
     let life = 80;
     if (this.smoker === true) {
       life += -5
+    } else if (this.weight >= 200) {
+      life += -2
     }
     return life
   }
