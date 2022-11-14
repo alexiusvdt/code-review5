@@ -16,6 +16,10 @@ export default class Expectancy {
       life += -2;
     } else if (this.married === 1) {
       life += 2;
+    } else if (this.majorCondition === true) {
+      life += -10;
+    } else if (this.drinks >= 7) {
+      life += -5
     }
     return life
   }
