@@ -30,10 +30,10 @@ export default class Age {
   }
 
   difference() {
-    let earthDifference = Number((this.userAverage - this.earthAge).toFixed(2));
-    let mercDifference = Number((this.mercuryAge(this.userAverage) - (this.mercuryAge(this.earthAge))).toFixed(2));
-    let venDifference = Number((this.venusAge(this.userAverage) - (this.venusAge(this.earthAge))).toFixed(2));
-    return `You have about ${earthDifference} Earth years, ${mercDifference} Mercury years, or ${venDifference} Venus years remaining.`;
+    let earthDiff = Number((this.userAverage - this.earthAge).toFixed(2));
+    let mercDiff = Number((this.mercuryAge(this.userAverage) - this.mercuryAge(this.earthAge)).toFixed(2));
+    let venDiff = Number((this.venusAge(this.userAverage) - this.venusAge(this.earthAge)).toFixed(2));
+    return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, or ${venDiff} Venus years remaining.`;
   }
 
 }
