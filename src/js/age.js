@@ -6,7 +6,7 @@ export default class Age {
   }
 
   mercuryAge() {
-    return Number((this.earth * 0.24).toFixed(2));
+    return Number((this.earth / 0.24).toFixed(2));
   }
 
 }
