@@ -22,6 +22,8 @@ export default class Expectancy {
       life += -5
     } else if (this.drinks >= 3 && this.drinks < 7) {
       life += -2
+    } else if (this.exercise === "high") {
+      life += 5
     }
     return life
   }
