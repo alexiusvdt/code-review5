@@ -4,7 +4,7 @@ describe('Expectancy', () => {
   let expectancy;
 
   beforeEach(() => {
-    expectancy = new Expectancy(false, 150, 0, 1, false, "high");
+    expectancy = new Expectancy(false, 150, 0, 1, false, "low");
   });
 
   test('should create an Expectancy object', () => {
@@ -13,7 +13,7 @@ describe('Expectancy', () => {
     expect(expectancy.married).toEqual(0);
     expect(expectancy.drinks).toEqual(1);
     expect(expectancy.majorCondition).toEqual(false);
-    expect(expectancy.exercise).toEqual("high");
+    expect(expectancy.exercise).toEqual("low");
   });
 
   test('smokers have their base life expectancy modified by -5', () => {
@@ -50,7 +50,11 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(80);
     expectancy.drinks = 4;
     expect(expectancy.getLifeExpectancy()).toEqual(78);
-
   });
+
+  test('users with high exercise per week have a high bonus applied', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
+    
+  })
 
 });
