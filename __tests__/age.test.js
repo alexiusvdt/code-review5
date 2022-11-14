@@ -15,7 +15,7 @@ describe('Age', () => {
     expect(age.earthAge).toEqual(30);
   });
 
-  test('should take user input of earth life expectancy and store in Age object', () => {
+  test('should take user derived input of earth life expectancy and store in Age object', () => {
     expect(age.userExpectancy).toEqual(80);
   });
 
@@ -42,5 +42,11 @@ describe('Age', () => {
   test('should return positive numbers for users who are older than the average age: Earth, Mercury, Venus, Mars, and Jupiter', () => {
     age.earthAge = 90;
     expect(age.difference()).toEqual(`You have surpassed the average life expectancy by: 10 Earth years, 41.67 Mercury years, 16.13 Venus years, 5.32 Mars years, or 0.84 Jupiter years.`)
+  });
+
+  test('should return a special message if users age is equal to the calculated expectancy', () => {
+    age.earthAge = 50;
+    age.userExpectancy = 50;
+    expect(age.difference()).toEqual(`Wow! Your age of 50 is exactly the calculated expectancy of 50! Here's to your continued health!`)
   });
 });
