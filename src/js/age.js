@@ -39,7 +39,8 @@ export default class Age {
     return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, ${marsDiff} Mars years, or ${jupDiff} Jupiter years remaining.`;
   } else {
       let earthDiff = Math.abs((this.userAverage - this.earthAge).toFixed(2));
-    return `You're older than the earth average by ${earthDiff} years.`;
+      let mercDiff = Math.abs((this.mercuryAge(this.userAverage) - this.mercuryAge(this.earthAge)).toFixed(2));
+    return `You have surpassed the average life expectancy by: ${earthDiff} Earth years, ${mercDiff} Mercury years .`;
   }
   }
 
