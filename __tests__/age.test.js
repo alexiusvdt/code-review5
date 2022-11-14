@@ -31,21 +31,13 @@ describe('Age', () => {
     expect(age.jupiterAge(30)).toEqual(2.53);
   });
 
-  test('should return average remaining years on earth in a string', () => {
-    expect(age.difference()).toEqual(`You have about 50 earth years remaining`)
+  test('should return average remaining years on earth and Mercury in a string', () => {
+    expect(age.difference()).toEqual(`You have about 50 Earth years, 208.33 Mercury years remaining.`)
   });
 
   test('should calculate average expectancy on multiple planets and store in expectancy array', () =>{
     age.planetAvgs();
     expect(age.planetExpectancies).toEqual([333.33, 129.03, 42.55, 6.75])
   });
-
-
-
-  // future tests
-  // test('should return average remaining years on Mercury', () => {
-  //   expect(age.difference().toEqual(333.33))
-  // })
-
 
 });
