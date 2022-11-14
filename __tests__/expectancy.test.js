@@ -16,6 +16,6 @@ describe('Expectancy', () => {
     expect(expectancy.exercise).toEqual("high");
   });
 
-
-
+  test('smokers have their base life expectancy modified by -5')
+    expect(expectancy.getLifeExpectancy()).toEqual(75)
 });
