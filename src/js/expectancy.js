@@ -24,6 +24,8 @@ export default class Expectancy {
       life += -2
     } else if (this.exercise === "high") {
       life += 5
+    } else if (this.exercise === "moderate") {
+      life += 3
     }
     return life
   }
