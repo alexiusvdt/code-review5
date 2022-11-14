@@ -35,15 +35,11 @@ describe('Age', () => {
     expect(age.difference()).toEqual(`You have about 50 earth years remaining`)
   });
 
-  test('should calculate average expectancy on Mercury and store in expectancy array', () =>{
-    age.planetAvgs();
-    expect(age.planetExpectancies).toEqual([333.33])
-  });
-
-  test('should calculate average expectancy on Mercury and Venus & store in expectancy array', () => {
+  test('should calculate average expectancy on multiple planets and store in expectancy array', () =>{
     age.planetAvgs();
     expect(age.planetExpectancies).toEqual([333.33, 129.03])
-  })
+  });
+
 
 
   // future tests
