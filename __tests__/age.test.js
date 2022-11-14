@@ -33,7 +33,10 @@ describe('Age', () => {
 
   test('should return average remaining years on earth in a string', () => {
     expect(age.difference()).toEqual(`You have about 50 earth years remaining`)
-  })
+  });
+
+  test('should create an array of average expectancy on Mercury ')
+    expect(age.planetExpectancies).toEqual([333.33])
 
   // future tests
   // test('should return average remaining years on Mercury', () => {

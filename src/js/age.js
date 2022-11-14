@@ -2,7 +2,7 @@ export default class Age {
   constructor(earthAge, userAverage) {
     this.earthAge = earthAge;
     this.userAverage = userAverage;
-    this.planetAverages = [];
+    
 
   }
 
@@ -23,8 +23,8 @@ export default class Age {
   }
 
   difference() {
-    let difference = Number((this.userAverage - this.earthAge).toFixed(2));
-    return `You have about ${difference} earth years remaining`;
+    let earthDifference = Number((this.userAverage - this.earthAge).toFixed(2));
+    return `You have about ${earthDifference} earth years remaining`;
   }
 
 }
