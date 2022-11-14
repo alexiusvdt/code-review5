@@ -1,6 +1,6 @@
-# (Application Name)
+# Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### a short code review project using classes
 
 #### By Alex Johnson
 
@@ -12,10 +12,13 @@
 * Node.js
 * bootstrap
 * jest
-*  [add more as they come!]
+<!-- *  [add more as they come!] -->
 
-## Description
- keep it brief!
+## Description/Objectives
+ * Write an application that determines a user's age based on a planet's solar years. 
+ * Return ages for the user on Mercury, Venus, Mars, and Jupiter
+ * Compare average life expectancy on other planets
+ * If user is over the avg life expectancy, number must be positive
 
 
 ## Setup/Installation Requirements
@@ -42,6 +45,7 @@ dev note:
 
 ## Future implementations
 
+* demographic gathering information instead of entered value
 
 ## License
 MIT License
