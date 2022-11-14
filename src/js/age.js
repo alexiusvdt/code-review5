@@ -28,7 +28,9 @@ export default class Age {
       let marsDiff = Number((this.marsAge(this.userExpectancy) - this.marsAge(this.earthAge)).toFixed(2));
       let jupDiff = Number((this.jupiterAge(this.userExpectancy) - this.jupiterAge(this.earthAge)).toFixed(2));
     return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, ${marsDiff} Mars years, or ${jupDiff} Jupiter years remaining.`;
-  } else {
+  } else if (this.earthAge === this.userExpectancy) {
+    return `Wow! Your age of ${this.earthAge} is exactly the calculated expectancy of ${this.userExpectancy}! Here's to your continued health!`
+  } else {  
       let earthDiff = Math.abs((this.userExpectancy - this.earthAge).toFixed(2));
       let mercDiff = Math.abs((this.mercuryAge(this.userExpectancy) - this.mercuryAge(this.earthAge)).toFixed(2));
       let venDiff = Math.abs((this.venusAge(this.userExpectancy) - this.venusAge(this.earthAge)).toFixed(2));
