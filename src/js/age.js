@@ -1,7 +1,8 @@
 export default class Age {
-  constructor(earthAge, averageEarth) {
+  constructor(earthAge, userAverage) {
     this.earth = earthAge;
-    this.averageEarth = averageEarth;
+    this.userAverage = userAverage;
+
   }
 
   mercuryAge() {
@@ -18,6 +19,10 @@ export default class Age {
 
   jupiterAge() {
     return Number((this.earth / 11.86).toFixed(2));
+  }
+
+  difference() {
+    let average = this.averageEarth
   }
 
 }
