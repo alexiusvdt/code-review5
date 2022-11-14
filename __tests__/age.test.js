@@ -37,7 +37,7 @@ describe('Age', () => {
 
   test('should calculate average expectancy on multiple planets and store in expectancy array', () =>{
     age.planetAvgs();
-    expect(age.planetExpectancies).toEqual([333.33, 129.03])
+    expect(age.planetExpectancies).toEqual([333.33, 129.03, 42.55, 6.75])
   });
 
 
