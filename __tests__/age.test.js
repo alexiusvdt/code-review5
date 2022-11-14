@@ -13,6 +13,10 @@ describe('Age', () => {
 
   test('should take user input of earth life expectancy and store in Age object', () => {
     expect(age.averageEarth).toEqual(80)
-  })
+  });
+
+  test('should return user age in Mercury years', () => {
+    expect(age.mercury).toEqual(7.2)
+  });
 
 });
