@@ -34,7 +34,8 @@ export default class Age {
     let mercDiff = Number((this.mercuryAge(this.userAverage) - this.mercuryAge(this.earthAge)).toFixed(2));
     let venDiff = Number((this.venusAge(this.userAverage) - this.venusAge(this.earthAge)).toFixed(2));
     let marsDiff = Number((this.marsAge(this.userAverage) - this.marsAge(this.earthAge)).toFixed(2));
-    return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, or ${marsDiff} Mars years remaining.`;
+    let jupDiff = Number((this.jupiterAge(this.userAverage) - this.jupiterAge(this.earthAge)).toFixed(2));
+    return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, ${marsDiff} Mars years, or ${jupDiff} Jupiter years remaining.`;
   }
 
 }
