@@ -8,7 +8,7 @@ describe('Age', () => {
   });
   
   test('should take user input of earth age and store in Age object', () => {
-    expect(age.earth).toEqual(30);
+    expect(age.earthAge).toEqual(30);
   });
 
   test('should take user input of earth life expectancy and store in Age object', () => {
@@ -31,8 +31,8 @@ describe('Age', () => {
     expect(age.jupiterAge()).toEqual(2.53);
   });
 
-  test('should create average expectancy for a Mercury', () => {
-    expect(age.planetAverages).toEqual([333.33])
+  test('should return average remaining years on earth', () => {
+    expect(age.difference()).toEqual(50.00)
   })
 
   // test('should return the difference of avg expectancy and current age on earth', () => {
