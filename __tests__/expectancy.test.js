@@ -58,4 +58,11 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(85);
   })
 
+  test('users with moderate exercise per week have a moderate bonus applied', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
+    expectancy.exercise = "moderate";
+    expect(expectancy.getLifeExpectancy()).toEqual(83);
+  });
+
+  
 });
