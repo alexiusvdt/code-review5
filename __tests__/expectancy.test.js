@@ -28,10 +28,16 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(78);
   });
  
-  test('users are applied a bonus based on marital status', () => {
+  test('users are applied a +2 bonus if marital status is 1', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(80);
     expectancy.married = 1
     expect(expectancy.getLifeExpectancy()).toEqual(82);
   });
+
+  test('users with a major health condition get a strong penalty', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
+    expectancy.majorCondition = true;
+    expect(expectancy.getLifeExpectancy()).toEqual(70);
+  })
 
 });
