@@ -11,7 +11,7 @@ export default class Age {
     this.planetExpectancies.push(this.marsAge(this.userAverage));
     this.planetExpectancies.push(this.jupiterAge(this.userAverage));
   }
-  
+
 
   mercuryAge(input) {
     return Number((input / 0.24).toFixed(2));
@@ -31,7 +31,8 @@ export default class Age {
 
   difference() {
     let earthDifference = Number((this.userAverage - this.earthAge).toFixed(2));
-    return `You have about ${earthDifference} earth years remaining`;
+    let mercDifference = Number((this.mercuryAge(this.userAverage) - (this.mercuryAge(this.earthAge))).toFixed(2));
+    return `You have about ${earthDifference} Earth years, ${mercDifference} Mercury years remaining.`;
   }
 
 }
