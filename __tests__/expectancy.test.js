@@ -17,14 +17,15 @@ describe('Expectancy', () => {
   });
 
   test('smokers have their base life expectancy modified by -5', () => {
-    expect(expectancy.getLifeExpectancy()).toEqual(80)
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
     expectancy.smoker = true;
-    expect(expectancy.getLifeExpectancy()).toEqual(75)
+    expect(expectancy.getLifeExpectancy()).toEqual(75);
   });
 
-  test('users with high weight values get a -2 to their expectancy')
-    expect(expectancy.getLifeExpectancy()).toEqual(80)
+  test('users with high weight values get a -2 to their expectancy', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
     expectancy.weight = 200;
-    expect(expectancy.getLifeExpectancy()).toEqual(78)
+    expect(expectancy.getLifeExpectancy()).toEqual(78);
+  });
  
 });
