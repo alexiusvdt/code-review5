@@ -1,6 +1,7 @@
 export default class Age {
-  constructor(earthAge) {
+  constructor(earthAge, averageEarth) {
     this.earth = earthAge;
+    this.averageEarth = averageEarth;
   }
 }
 
