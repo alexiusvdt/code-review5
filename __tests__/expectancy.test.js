@@ -28,4 +28,10 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(78);
   });
  
+  test('users are applied a bonus based on marital status', () => {
+    expect(expectancy.getLifeExpectancy()).toEqual(80);
+    expectancy.married = 1
+    expect(expectancy.getLifeExpectancy()).toEqual(82);
+  })
+
 });
