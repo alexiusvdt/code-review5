@@ -64,5 +64,9 @@ describe('Expectancy', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(83);
   });
 
-  
+  test('user will have all modifiers applied to life', () => {
+    expectancy2 = new Expectancy(true, 250, 1, 8, true, "high")
+    expect(expectancy2.getLifeExpectancy()).toEqual(65);
+  });
+
 });
