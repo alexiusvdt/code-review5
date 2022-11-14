@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Age from '../src/js/age.js';
+// import Age from '../src/js/age.js';
 
 
 

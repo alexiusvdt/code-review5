@@ -8,7 +8,10 @@ export default class Age {
   planetAvgs() {
     this.planetExpectancies.push(this.mercuryAge(this.userAverage));
     this.planetExpectancies.push(this.venusAge(this.userAverage));
+    this.planetExpectancies.push(this.marsAge(this.userAverage));
+    this.planetExpectancies.push(this.jupiterAge(this.userAverage));
   }
+  
 
   mercuryAge(input) {
     return Number((input / 0.24).toFixed(2));
