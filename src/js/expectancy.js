@@ -11,9 +11,11 @@ export default class Expectancy {
   getLifeExpectancy() {
     let life = 80;
     if (this.smoker === true) {
-      life += -5
+      life += -5;
     } else if (this.weight >= 200) {
-      life += -2
+      life += -2;
+    } else if (this.married === 1) {
+      life += 2;
     }
     return life
   }
