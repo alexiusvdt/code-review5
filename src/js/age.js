@@ -2,15 +2,15 @@ export default class Age {
   constructor(earthAge, userAverage) {
     this.earthAge = earthAge;
     this.userAverage = userAverage;
-    this.planetExpectancies = [];
+    // this.planetExpectancies = [];
   }
 
-  planetAvgs() {
-    this.planetExpectancies.push(this.mercuryAge(this.userAverage));
-    this.planetExpectancies.push(this.venusAge(this.userAverage));
-    this.planetExpectancies.push(this.marsAge(this.userAverage));
-    this.planetExpectancies.push(this.jupiterAge(this.userAverage));
-  }
+  // planetAvgs() {
+  //   this.planetExpectancies.push(this.mercuryAge(this.userAverage));
+  //   this.planetExpectancies.push(this.venusAge(this.userAverage));
+  //   this.planetExpectancies.push(this.marsAge(this.userAverage));
+  //   this.planetExpectancies.push(this.jupiterAge(this.userAverage));
+  // }
 
 
   mercuryAge(input) {
