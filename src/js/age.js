@@ -1,17 +1,8 @@
 export default class Age {
-  constructor(earthAge, userAverage) {
+  constructor(earthAge, userExpectancy) {
     this.earthAge = earthAge;
-    this.userAverage = userAverage;
-    // this.planetExpectancies = [];
+    this.userExpectancy = userExpectancy;
   }
-
-  // planetAvgs() {
-  //   this.planetExpectancies.push(this.mercuryAge(this.userAverage));
-  //   this.planetExpectancies.push(this.venusAge(this.userAverage));
-  //   this.planetExpectancies.push(this.marsAge(this.userAverage));
-  //   this.planetExpectancies.push(this.jupiterAge(this.userAverage));
-  // }
-
 
   mercuryAge(input) {
     return Number((input / 0.24).toFixed(2));
@@ -30,19 +21,19 @@ export default class Age {
   }
 
   difference() {
-    if (this.earthAge < this.userAverage) {
-      let earthDiff = Number((this.userAverage - this.earthAge).toFixed(2));
-      let mercDiff = Number((this.mercuryAge(this.userAverage) - this.mercuryAge(this.earthAge)).toFixed(2));
-      let venDiff = Number((this.venusAge(this.userAverage) - this.venusAge(this.earthAge)).toFixed(2));
-      let marsDiff = Number((this.marsAge(this.userAverage) - this.marsAge(this.earthAge)).toFixed(2));
-      let jupDiff = Number((this.jupiterAge(this.userAverage) - this.jupiterAge(this.earthAge)).toFixed(2));
+    if (this.earthAge < this.userExpectancy) {
+      let earthDiff = Number((this.userExpectancy - this.earthAge).toFixed(2));
+      let mercDiff = Number((this.mercuryAge(this.userExpectancy) - this.mercuryAge(this.earthAge)).toFixed(2));
+      let venDiff = Number((this.venusAge(this.userExpectancy) - this.venusAge(this.earthAge)).toFixed(2));
+      let marsDiff = Number((this.marsAge(this.userExpectancy) - this.marsAge(this.earthAge)).toFixed(2));
+      let jupDiff = Number((this.jupiterAge(this.userExpectancy) - this.jupiterAge(this.earthAge)).toFixed(2));
     return `You have about ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, ${marsDiff} Mars years, or ${jupDiff} Jupiter years remaining.`;
   } else {
-      let earthDiff = Math.abs((this.userAverage - this.earthAge).toFixed(2));
-      let mercDiff = Math.abs((this.mercuryAge(this.userAverage) - this.mercuryAge(this.earthAge)).toFixed(2));
-      let venDiff = Math.abs((this.venusAge(this.userAverage) - this.venusAge(this.earthAge)).toFixed(2));
-      let marsDiff = Math.abs((this.marsAge(this.userAverage) - this.marsAge(this.earthAge)).toFixed(2));
-      let jupDiff = Math.abs((this.jupiterAge(this.userAverage) - this.jupiterAge(this.earthAge)).toFixed(2));
+      let earthDiff = Math.abs((this.userExpectancy - this.earthAge).toFixed(2));
+      let mercDiff = Math.abs((this.mercuryAge(this.userExpectancy) - this.mercuryAge(this.earthAge)).toFixed(2));
+      let venDiff = Math.abs((this.venusAge(this.userExpectancy) - this.venusAge(this.earthAge)).toFixed(2));
+      let marsDiff = Math.abs((this.marsAge(this.userExpectancy) - this.marsAge(this.earthAge)).toFixed(2));
+      let jupDiff = Math.abs((this.jupiterAge(this.userExpectancy) - this.jupiterAge(this.earthAge)).toFixed(2));
     return `You have surpassed the average life expectancy by: ${earthDiff} Earth years, ${mercDiff} Mercury years, ${venDiff} Venus years, ${marsDiff} Mars years, or ${jupDiff} Jupiter years.`;
     }
   }
