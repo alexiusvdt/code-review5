@@ -8,7 +8,7 @@ describe('Age', () => {
   });
   
   test('should take user input of earth age and store in an object', () => {
-    expect(Age.earth).toEqual(30) 
+    expect(age.earth).toEqual(30);
   });
 
 
