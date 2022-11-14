@@ -54,7 +54,8 @@ describe('Expectancy', () => {
 
   test('users with high exercise per week have a high bonus applied', () => {
     expect(expectancy.getLifeExpectancy()).toEqual(80);
-    
+    expectancy.exercise = "high";
+    expect(expectancy.getLifeExpectancy()).toEqual(85);
   })
 
 });
