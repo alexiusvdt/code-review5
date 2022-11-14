@@ -16,19 +16,19 @@ describe('Age', () => {
   });
 
   test('should return user age in Mercury years', () => {
-    expect(age.mercuryAge()).toEqual(125);
+    expect(age.mercuryAge(30)).toEqual(125);
   });
 
   test('should return user age in Venus years', () => {
-    expect(age.venusAge()).toEqual(48.39);
+    expect(age.venusAge(30)).toEqual(48.39);
   });
 
   test('should return user age in Mars years', () => {
-    expect(age.marsAge()).toEqual(15.96);
+    expect(age.marsAge(30)).toEqual(15.96);
   });
 
   test('should return user age in Jupiter years', () => {
-    expect(age.jupiterAge()).toEqual(2.53);
+    expect(age.jupiterAge(30)).toEqual(2.53);
   });
 
   test('should return average remaining years on earth in a string', () => {

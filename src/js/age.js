@@ -2,24 +2,27 @@ export default class Age {
   constructor(earthAge, userAverage) {
     this.earthAge = earthAge;
     this.userAverage = userAverage;
-    
-
+    this.planetExpectancies = [];
   }
 
-  mercuryAge() {
-    return Number((this.earthAge / 0.24).toFixed(2));
+  // planetAvgs() {
+  //   this.planetExpectancies.push(this.mercuryAge(this.userAverage));
+  // }
+
+  mercuryAge(input) {
+    return Number((input / 0.24).toFixed(2));
   }
 
-  venusAge() {
-    return Number((this.earthAge / 0.62).toFixed(2));
+  venusAge(input) {
+    return Number((input / 0.62).toFixed(2));
   }
 
-  marsAge() {
-    return Number((this.earthAge / 1.88).toFixed(2));
+  marsAge(input) {
+    return Number((input / 1.88).toFixed(2));
   }
 
-  jupiterAge() {
-    return Number((this.earthAge / 11.86).toFixed(2));
+  jupiterAge(input) {
+    return Number((input / 11.86).toFixed(2));
   }
 
   difference() {
