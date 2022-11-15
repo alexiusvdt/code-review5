@@ -1,14 +1,10 @@
 import Age from '../src/js/age.js';
-import Expectancy from '../src/js/expectancy.js';
 
 describe('Age', () => {
   let age;
-  let expectancy;
 
   beforeEach(() => {
-    expectancy = new Expectancy(false, 150, 0, 1, false, "low")
-    let userExpectancy = expectancy.getLifeExpectancy();
-    age = new Age(30, userExpectancy);
+    age = new Age(30, 80);
   });
   
   test('should take user input of earth age and store in Age object', () => {

@@ -10,9 +10,8 @@
 * CSS
 * JavaScript
 * Node.js
-* bootstrap
 * jest
-<!-- *  [add more as they come!] -->
+
 
 ## Description/Objectives
  * Write an application that determines a user's age based on a planet's solar years. 
@@ -28,10 +27,6 @@
 * install all packages with $npm install
 * build the project using $npm run build
 * start a live server with $npm run start
-
-dev note:
-* lint js files in src with $npm run lint (after writing more code)
-* run tests with Jest using $npm run test
 
 ## Known Bugs
 
