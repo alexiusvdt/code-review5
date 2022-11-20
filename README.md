@@ -27,6 +27,7 @@
 * install all packages with $npm install
 * build the project using $npm run build
 * start a live server with $npm run start
+* run tests with $npm run test
 
 ## Known Bugs
 
